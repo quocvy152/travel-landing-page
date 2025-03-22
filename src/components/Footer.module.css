@@ -1,0 +1,26 @@
+/* Footer.module.css */
+.rotateAnimation {
+    animation: rotate 0.5s infinite alternate;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
