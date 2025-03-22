@@ -1,6 +1,10 @@
 // app/blog/[slug]/page.js
 import Link from 'next/link';
 
+type BlogDetailParams = {
+    params: { slug: string };
+};
+
 const blogPosts = [
     {
         subtitle: "Du lịch Châu Đốc",
@@ -107,8 +111,8 @@ const blogPosts = [
     },
 ];
 
-const BlogDetail = ({ params }: { params: { slug: string } }) => {
-    const { slug } = params;
+async function BlogDetail({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
     const post = blogPosts.find((post) => post.slug === slug);
 
     if (!post) {
