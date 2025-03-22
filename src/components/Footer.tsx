@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
 
             <div className="fixed bottom-4 right-4 flex flex-col space-y-4">
-                <a href="tel:0971100700" className="bg-red-500 p-3 rounded-full shadow-lg">
+                <a href="tel:0903383234" className="bg-red-500 p-3 rounded-full shadow-lg">
                     <img src="/images/ic_phone.png" alt="Phone" className={`h-6 w-6 ${styles.rotateAnimation}`} />
                 </a>
                 <a href="https://zalo.me" className="bg-blue-500 p-3 rounded-full shadow-lg">
